@@ -2,10 +2,10 @@ package com.sharedLibraryTest
 
 class TestClass {
     def sayHi() {
-        println "Hi from ClassTest!"
+        print "Hi from ClassTest!"
     }
 
     def sayHello(name) {
-        println "Hello ${name}"
+        print "Hello ${name}"
     }
 }
