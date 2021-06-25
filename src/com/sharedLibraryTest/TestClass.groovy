@@ -3,7 +3,7 @@ package com.sharedLibraryTest
 class TestClass {
     // Get the out variable
     
-    def sayHi(out) {
+    def sayHi() {
        
        out.println "Hi from ClassTest!"
        
