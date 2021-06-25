@@ -1,0 +1,11 @@
+package org.sharedLibraryTest
+
+class ClassTest {
+    def sayHi() {
+        echo "Hi from ClassTest!"
+    }
+
+    def sayHello(name) {
+        echo "Hello ${name}"
+    }
+}
