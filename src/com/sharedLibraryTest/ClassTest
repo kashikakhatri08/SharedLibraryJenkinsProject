@@ -1,4 +1,4 @@
-package org.sharedLibraryTest
+package com.sharedLibraryTest
 
 class ClassTest {
     def sayHi() {
