@@ -5,7 +5,7 @@ class TestClass {
     
     def sayHi() {
        
-       out.println "Hi from ClassTest!"
+       println "Hi from ClassTest!"
        
         
     }
