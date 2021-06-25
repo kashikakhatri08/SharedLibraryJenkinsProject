@@ -1,8 +1,9 @@
 package com.sharedLibraryTest
 
 class TestClass {
-    def sayHi() {
+    def sayHi(out) {
        out.println "Hi from ClassTest!"
+       
         
     }
 
