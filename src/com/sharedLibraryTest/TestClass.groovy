@@ -1,8 +1,8 @@
 package com.sharedLibraryTest
 
 class TestClass {
-    def sayHi() {
-        println "Hi from ClassTest!"
+    def sayHi(dsl) {
+        dsl echo "Hi from ClassTest!"
         
     }
 
