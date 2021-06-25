@@ -1,6 +1,6 @@
 package com.sharedLibraryTest
 
-class ClassTest {
+class TestClass {
     def sayHi() {
         echo "Hi from ClassTest!"
     }
