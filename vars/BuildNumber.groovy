@@ -1,6 +1,6 @@
 import com.sharedLibraryTest.BuildClass
 
-def call(int buildNumber,string JobName) {
+def call(int buildNumber,string currentJobName) {
   def classBuild = new BuildClass(script:this)
   if (buildNumber % 2 == 0) {
     pipeline {
@@ -8,7 +8,7 @@ def call(int buildNumber,string JobName) {
       stages {
         stage('Even Build Job') {
           steps {
-            classBuild.EvenBuild(JobName,buildNumber)
+            classBuild.EvenBuild(currentJobName,buildNumber)
           }
         }
       }
@@ -19,7 +19,7 @@ def call(int buildNumber,string JobName) {
       stages {
         stage('Odd Build Job') {
           steps {
-            classBuild.EvenBuild(JobName,buildNumber)
+            classBuild.EvenBuild(currentJobName,buildNumber)
           }
         }
       }
