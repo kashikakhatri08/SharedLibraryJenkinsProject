@@ -1,11 +1,10 @@
 package com.sharedLibraryTest
 
-class TestClass {
+class TestClass implements Serializable {
     // Get the out variable
     
     def sayHi() {
-       
-       System.out.println "Hi from ClassTest!"
+       println "Hi from ClassTest!"
        
         
     }
