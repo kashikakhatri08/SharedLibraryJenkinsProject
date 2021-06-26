@@ -15,18 +15,5 @@ def call(int buildNumber,String currentJobName) {
         }
       }
     }
-  } else {
-    pipeline {
-      agent any
-      stages {
-        stage('Odd Build Job') {
-          steps {
-           script{
-            classBuild.EvenBuild(currentJobName,buildNumber)
-            }
-          }
-        }
-      }
-    }
   }
-}
+  
