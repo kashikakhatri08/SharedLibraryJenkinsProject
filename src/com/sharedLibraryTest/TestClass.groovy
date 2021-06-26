@@ -1,6 +1,6 @@
 package com.sharedLibraryTest
 
-class TestClass implements Serializable {
+class TestClass {
     
     Script script;
     
