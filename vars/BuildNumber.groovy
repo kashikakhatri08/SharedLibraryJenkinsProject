@@ -16,4 +16,5 @@ def call(int buildNumber,String currentJobName) {
       }
     }
   }
+}
   
