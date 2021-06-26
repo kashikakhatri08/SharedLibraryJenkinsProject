@@ -8,7 +8,9 @@ def call(int buildNumber,String currentJobName) {
       stages {
         stage('Even Stage') {
           steps {
+            script{
              classBuild.EvenBuild(currentJobName,buildNumber)
+            }
           }
         }
       }
@@ -19,7 +21,9 @@ def call(int buildNumber,String currentJobName) {
       stages {
         stage('Odd Stage') {
           steps {
+            script{
             classBuild.OddBuild(currentJobName,buildNumber)
+            }
           }
         }
       }
