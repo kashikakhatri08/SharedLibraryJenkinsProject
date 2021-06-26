@@ -9,7 +9,11 @@ def call(int buildNumber,String currentJobName) {
         stage('Even Build Job') {
           steps {
             script{
+            if (buildNumber % 2 == 0) {
             classBuild.EvenBuild(currentJobName,buildNumber)
+            }
+            else{
+            classBuild.OddBuild(currentJobName,buildNumber)
             }
           }
         }
