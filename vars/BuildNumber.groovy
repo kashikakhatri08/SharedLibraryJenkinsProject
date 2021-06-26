@@ -1,7 +1,7 @@
 import com.sharedLibraryTest.BuildClass
 
 def call(int buildNumber,string JobName) {
-  def classBuild = new BuildClass()
+  def classBuild = new BuildClass(script:this)
   if (buildNumber % 2 == 0) {
     pipeline {
       agent any
