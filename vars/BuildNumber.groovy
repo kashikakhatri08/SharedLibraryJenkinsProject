@@ -6,7 +6,7 @@ def call(int buildNumber,String currentJobName) {
     pipeline {
       agent any
       stages {
-        stage('Even Stage') {
+        stage('Even Build') {
           steps {
             script{
              classBuild.EvenBuild(currentJobName,buildNumber)
@@ -19,7 +19,7 @@ def call(int buildNumber,String currentJobName) {
     pipeline {
       agent any
       stages {
-        stage('Odd Stage') {
+        stage('Odd Build') {
           steps {
             script{
             classBuild.OddBuild(currentJobName,buildNumber)
