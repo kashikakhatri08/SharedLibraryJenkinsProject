@@ -1,6 +1,6 @@
 import com.sharedLibraryTest.BuildClass
 
-def call(int buildNumber,string currentJobName) {
+def call(int buildNumber,String currentJobName) {
   def classBuild = new BuildClass(script:this)
   if (buildNumber % 2 == 0) {
     pipeline {
