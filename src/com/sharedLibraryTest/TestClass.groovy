@@ -11,6 +11,6 @@ class TestClass implements Serializable {
     }
 
     def sayHello(name) {
-        print("Hello ${name}")
+        script.echo("Hello ${name}")
     }
 }
