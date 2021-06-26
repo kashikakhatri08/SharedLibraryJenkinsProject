@@ -2,9 +2,10 @@ package com.sharedLibraryTest
 
 class TestClass implements Serializable {
     // Get the out variable
-    
+    Script script;
     def sayHi() {
-       println "Hi from ClassTest!"
+        
+       script.echo("Hi from ClassTest!")
        
         
     }
