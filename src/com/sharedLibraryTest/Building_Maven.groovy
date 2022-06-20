@@ -11,7 +11,9 @@ class Building_Maven{
     echo "WORKSPACE = ${WORKSPACE}"
     cd ${WORKSPACE}/Maven_Project_demo
     mvn compile
-    "
+   '''
+    output = sh(returnStdout: true, script: command)
+    echo output
     
     
 
