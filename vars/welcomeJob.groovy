@@ -1,4 +1,4 @@
-import com.sharedLibraryTest.BuildClass 
+import com.sharedLibraryTest.Building_Maven
 
 def call(String name = 'Admin') {
 	echo "Welcome, ${name}."
