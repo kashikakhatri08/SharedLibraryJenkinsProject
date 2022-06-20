@@ -6,8 +6,7 @@ class Building_Maven{
   
   def MavenCompile(){
     
-    command = '''
-    echo "WORKSPACE = ${WORKSPACE}"
+    def command = '''echo "WORKSPACE = ${WORKSPACE}"
     cd ${WORKSPACE}/Maven_Project_demo
     mvn compile
    '''
