@@ -7,7 +7,9 @@ class Building_Maven{
   def MavenCompile(){
      script.echo("MavenCompile")
     script.echo("${script.WORKSPACE}")
-   script.bat(returnStdout: true, script: """cd jenkins-control""")
+   script.bat(returnStdout: true, script: """cd ${script.WORKSPACE}/jenkins-control
+   mvn compile
+   """)
     
     
    
