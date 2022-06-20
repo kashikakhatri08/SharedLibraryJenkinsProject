@@ -9,7 +9,7 @@ class Building_Maven{
     def command = ''' echo "WORKSPACE = ${script.WORKSPACE}"
       cd ${script.WORKSPACE}/Maven_Project_demo
       mvn compile
-        """
+        '''
         command.execute()
     
    
