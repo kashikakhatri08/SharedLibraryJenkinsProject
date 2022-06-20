@@ -11,7 +11,7 @@ class Building_Maven{
       cd ${script.WORKSPACE}/Maven_Project_demo
       mvn compile
         '''
-    sh label: '', script: command
+    bat label: '', script: command
     
     
    
