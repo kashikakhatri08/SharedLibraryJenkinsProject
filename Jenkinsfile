@@ -6,7 +6,8 @@ pipeline {
         stage('Example') {
             steps {
                 cleanWs()
-                git credentialsId: 'kashikakhatri08', url: 'https://github.com/kashikakhatri08/Maven_Project_demo.git'
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'jenkins-control']], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/kashikakhatri08/Maven_Project_demo.git']]])
+               
                 welcomeJob 'Hello Devops Team'
                 
               
