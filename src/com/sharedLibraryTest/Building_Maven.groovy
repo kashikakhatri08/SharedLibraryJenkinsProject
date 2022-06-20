@@ -5,14 +5,15 @@ class Building_Maven{
   Script script
   
   def MavenCompile(){
+     script.echo("MavenCompile")
+     sh label: '', script: '''#!/bin/bash -ex
+     echo "WORKSPACE = ${WORKSPACE}"
+      cd ${WORKSPACE}/Maven_Project_demo
+      mvn compile
+    '''
+   
     
-    def command = '''echo "WORKSPACE = ${WORKSPACE}"
-    cd ${WORKSPACE}/Maven_Project_demo
-    mvn compile
-   '''
-    script.echo("MavenCompile")
-    output = bat(returnStdout: true, script: command)
-    echo output
+  
     
     
 
