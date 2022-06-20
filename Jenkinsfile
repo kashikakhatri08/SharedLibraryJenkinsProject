@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Example') {
             steps {
-                cleanws()
+                cleanWs()
                 git credentialsId: 'kashikakhatri08', url: 'https://github.com/kashikakhatri08/Maven_Project_demo.git'
                 welcomeJob 'Hello Devops Team'
                 
