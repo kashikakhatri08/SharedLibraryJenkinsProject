@@ -23,10 +23,18 @@ class Building_Maven{
   
   def MavenPackages(){
     script.echo("MavenPackages")
+    def command = script.bat(returnStdout: true, script: """cd ${script.WORKSPACE}/jenkins-control
+    mvn package
+   """)
+    script.echo(command)
   }
   
   def RunJavaProject(){
     script.echo("RunJavaProject")
+    def command = script.bat(returnStdout: true, script: """cd ${script.WORKSPACE}/jenkins-control
+    java -jar target/Maven_Project_demo-1.0-SNAPSHOT.jar
+   """)
+    script.echo(command)
   }
   
 def Maven(){
