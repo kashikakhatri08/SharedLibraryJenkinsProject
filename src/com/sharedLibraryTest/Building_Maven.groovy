@@ -7,7 +7,6 @@ class Building_Maven{
   def MavenCompile(){
     script.echo("MavenCompile")
     command = '''#!/bin/bash -ex
-    source ${DEVENV}
     echo "WORKSPACE = ${WORKSPACE}"
     cd ${WORKSPACE}/Maven_Project_demo
     mvn compile
